@@ -44,5 +44,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-pluguin:sonar -Dsonar.projectKey=vandersoncr_vollmed-api 
+      run: mvn sonar:sonar -Dsonar.projectKey=vanderson_vollmed-api
 
